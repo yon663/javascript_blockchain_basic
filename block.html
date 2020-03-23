@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="blockchain.css"/>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="#">블록체인</a>
+        </header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">메뉴</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">메뉴</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">메뉴</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">메뉴</a>
+                </li>
+            </ul>
+        </nav>
+        <aside>
+            <form>
+                <input type = "text" id = "blockchain-data" />
+                <input type = "button" id ="blockchain-button" value="블록체인생성"/>
+            </form>
+        </aside>
+        <section id="section">
+            <template id="template">
+                <div class="block">
+                    <p class="block-index"></p>
+                    <p class="block-data"></p>
+                    <p class="block-hash"></p>
+                    <p class="block-previous-block"></p>
+                    <label class="block-closeup">[ 확대 ]</label>
+                </div>
+            </template>
+        </section>
+        <footer>
+            <p>
+                공부용 페이지입니다. By.정윤성
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
+    <script src="blockchain.js"></script>
+</body>
+</html>

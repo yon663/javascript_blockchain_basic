@@ -1,0 +1,137 @@
+@import "reset.css";
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr minmax(400px, 600px) 1fr 2fr ;
+    gap: 1em 1em;
+}
+
+#container header {
+    margin-top: 10px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 1px solid black;
+}
+
+header:hover {
+    cursor: pointer;
+}
+
+#container nav {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#container nav .nav-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#container nav .nav-item {
+    width: 25%;
+    text-align: center;
+}
+
+.nav-item:hover {
+    transform: scale(1.12);
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.nav-item:link {
+    color: black;
+}
+
+.nav-item:visited {
+    color: black;
+}
+
+#container aside {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    align-items: flex-start;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form #blockchain-data {
+    margin-bottom: 5px;
+}
+
+#blockchain-data {
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+#blockchain-button {
+    all: unset;
+    cursor: pointer;
+    background-color: darkgray;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 150px;
+    flex-shrink: 1;
+}
+
+#blockchain-button:active {
+    transform: scale(0.98);
+}
+
+#container section {
+    grid-column: 2/5;
+    grid-row: 3/auto;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section .block {
+    margin: 1.2rem;
+    width: 44%;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.closeup {
+    transform: scale(1.2);
+}
+
+.block-index, .block-hash, .block-previous-block, .block-data {
+    display: block;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.block-closeup {
+    width:20%;
+    margin: 0.5rem 0;
+}
+
+#container footer {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    width: 150px;
+    flex-shrink: 1;
+}
